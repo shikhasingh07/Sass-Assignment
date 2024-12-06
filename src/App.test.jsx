@@ -1,0 +1,9 @@
+import { render, screen } from '@testing-library/react';
+import App from './App';
+
+test('renders learn react link', () => {
+  render(<App />);
+  expect(screen.getByText('S.No.')).toBeInTheDocument();
+  expect(screen.getByText('Percentage Funded')).toBeInTheDocument();
+  expect(screen.getByText('Amount Pledged')).toBeInTheDocument();
+});
